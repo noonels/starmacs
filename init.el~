@@ -61,11 +61,10 @@
  '(org-agenda-files nil)
  '(org-modern-block-fringe t)
  '(package-selected-packages
-   '(ace-window add-node-modules-path autothemer cider company
-                company-box doom-modeline doom-themes flycheck go-mode
-                helpful hl-todo marginalia markdown-mode meow mmm-mode
-                orderless org-roam rainbow-delimiters sqlite3
-                transient vertico vterm web-mode with-editor zig-mode))
+   '(ace-window autothemer cider company helpful hl-todo marginalia
+		markdown-mode meow mmm-mode orderless org-roam
+		rainbow-delimiters sqlite3 transient vertico
+		with-editor))
  '(warning-suppress-types
    '(((defvaralias losing-value org-tab-first-hook)) (use-package)
      (use-package))))
