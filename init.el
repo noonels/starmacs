@@ -22,9 +22,6 @@
 
 (setq use-package-vc-prefer-newest t)
 
-;; load org so that babel will work, custom org configuration is in README.org
-(use-package org
-  :ensure t)
 
 ;; load modules I've written in /usr
 (let ((default-directory  user-emacs-directory))
@@ -61,11 +58,17 @@
  '(org-agenda-files nil)
  '(org-modern-block-fringe t)
  '(package-selected-packages
-   '(ace-window add-node-modules-path autothemer cider company
-                company-box doom-modeline doom-themes flycheck go-mode
-                helpful hl-todo marginalia markdown-mode meow mmm-mode
-                orderless org-roam rainbow-delimiters sqlite3
-                transient vertico vterm web-mode with-editor zig-mode))
+   '(ace-window add-node-modules-path anisochromatic-theme autothemer
+                base-line cider company company-box doom-modeline
+                doom-themes flycheck forge git-gutter go-mode helpful
+                hl-todo magit marginalia markdown-mode meow mmm-mode
+                orderless org-roam rainbow-delimiters sly sqlite3
+                transient treemacs vertico vterm web-mode why-this
+                with-editor zig-mode))
+ '(package-vc-selected-packages
+   '((base-line :url "http://github.com/isomatter-labs/base-line")
+     (anisochromatic-theme :url
+                           "http://github.com/isomatter-labs/anisochromatic-emacs")))
  '(warning-suppress-types
    '(((defvaralias losing-value org-tab-first-hook)) (use-package)
      (use-package))))

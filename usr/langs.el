@@ -146,7 +146,7 @@
              :repo "godotengine/emacs-gdscript-mode"))
 
 ;;; Fortran 90+
-(add-to-list 'eglot-server-programs '(f90-mode . ("fortls" "--notify_init" "--nthreads=4")))
+; (add-to-list 'eglot-server-programs '(f90-mode . ("fortls" "--notify_init" "--nthreads=4")))
 
 ;;; LISP
 ;; no tabs in lisp
@@ -155,12 +155,6 @@
 (use-package sly
   :ensure t)
 
-;; paredit allows for some now keybinding that make working with parens suck less
-(use-package paredit
-  :init
-  (progn
-    (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-    (add-hook 'common-lisp-mode-hook 'paredit-mode)))
 
 ;;; Markdown
 (use-package markdown-mode
